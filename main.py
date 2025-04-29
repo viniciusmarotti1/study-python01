@@ -1,5 +1,13 @@
 import math
 
-date = input("Insira uma data no formato (dd/mm/yyyy): ")
-formated_date = date.split("/")
-print(f"Dia: {formated_date[0]} - Mês: {formated_date[1]} - Ano {formated_date[2]}")
+try:
+    n1 = int(input("Insira um numero inteiro: "))
+    n2 = int(input("Insira outro numero inteiro: "))
+    result = n1 // n2
+    print(result)
+except TypeError as error:
+    print(error)
+else:
+    print("successfully script")
+finally:
+    print("finally script")

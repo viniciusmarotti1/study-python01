@@ -1,8 +1,5 @@
-name = input("Digite seu nome: ")
-salary = float(input("Digite seu salário: "))
-bonus = float(input("Digite a porcentagem do bonus: %"))
-CONST_BONUS = 1000
-result = CONST_BONUS + salary * bonus
+import math
 
-print(f"{name}, segundo os dados obtidos, o valor do seu bonus será: {result}")
-
+date = input("Insira uma data no formato (dd/mm/yyyy): ")
+formated_date = date.split("/")
+print(f"Dia: {formated_date[0]} - Mês: {formated_date[1]} - Ano {formated_date[2]}")
